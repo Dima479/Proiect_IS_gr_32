@@ -1,0 +1,25 @@
+//Use-case Sistemul citeste de la senzori datele si le afiseaza
+import java.util.ArrayList;
+
+public class main {
+    public static void main(String[] args) {
+        Sistem sistem = new Sistem("Sistem Meteo Central");
+        
+        Senzor s1 = new Senzor(1,true,"temperatura");
+        Senzor s2 = new Senzor(2,true,"presiune");
+        
+        sistem.adaugareSenzori(s1);
+        sistem.adaugareSenzori(s2);
+        
+        System.out.println("Sistemul a fost initializat.");
+        
+        ArrayList<DateMeteo> istoric = new ArrayList<>();
+        DateMeteo dateCurente = sistem.actualizareDate();
+        
+        if(dateCurente != null) {
+        	istoric.add(dateCurente);
+        	System.out.println("Date adaugate in istoric");
+        }
+    }
+
+}
