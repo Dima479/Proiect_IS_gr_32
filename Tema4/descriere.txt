@@ -1,0 +1,5 @@
+Acest system este asociat cu o anumita loactie unde sunt aplasati senzorii care masoara diferiti factori meteo.
+Sistemul foloseste mai multi WeatherSensor pentru colectarea datelor.Fiecare senzore are un tip care este sabilit in enumerarea SensorType.
+Datele colectate de senzori sunt salvate in clasa WeatherReading.Acewasta reorezubta o citire meteo facuta la un anumit moment.
+Acesta poate genera date precum precum alerte meteo care sunt trimise spre utilizator cand apar valori importante sau periculoase, acest nivel find stability prin enumerearea AlertLevel.
+
